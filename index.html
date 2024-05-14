@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Bond 007 Museum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>James Bond 007 Museum</h1>
+        <nav>
+            <ul>
+                <li><a href="#featured">Utvalgte utstillinger</a></li>
+                <li><a href="store.html">Butikk</a></li>
+                <li><a href="#visit">Besøk oss</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="featured">
+        <h2>Utvalgte utstillinger</h2>
+        <div class="exhibit">
+            <img src="bilder/cessna-n96816.jpg" alt="Cessna 172 fra James Bond">
+            <h3>Cessna 172 Fly</h3>
+            <p>Dette flyet ble brukt i en kjent James Bond film.</p>
+            <label for="visit-date">Velg dato for besøk:</label>
+            <input type="date" id="visit-date" name="visit-date">
+            <button>Se tilgjengelige billetter</button>
+        </div>
+        <div class="exhibit">
+            <img src="bilder/81EdG7H2KrL._AC_UF1000,1000_QL80_.jpg" alt="Aston Martin DB5">
+            <h3>Aston Martin DB5</h3>
+            <p>Kjøretøyet kjent fra flere James Bond-filmer.</p>
+            <label for="visit-date2">Velg dato for besøk:</label>
+            <input type="date" id="visit-date2" name="visit-date">
+            <button>Se tilgjengelige billetter</button>
+        </div>
+        <div class="exhibit">
+            <img src="bilder/GGBG001_c8726f57-6803-4dc1-9792-ff512dc1c641_2048x.webp" alt="The Golden Gun">
+            <h3>The Golden Gun</h3>
+            <p>Den ikoniske pistolen fra 'The Man with the Golden Gun'.</p>
+            <label for="visit-date3">Velg dato for besøk:</label>
+            <input type="date" id="visit-date3" name="visit-date">
+            <button>Se tilgjengelige billetter</button>
+        </div>
+    </section>
+
+    <section id="social-media">
+        <h2>Følg oss på sosiale medier</h2>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="bilder/2021_Facebook_icon.svg.png" alt="Facebook"></a>
+            <a href="https://instagram.com" target="_blank"><img src="bilder/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.avif" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="bilder/2504839.png" alt="Twitter"></a>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h2>Nyhetsbrev</h2>
+        <form>
+           <input type="email" placeholder="Din e-postadresse" required>
+            <button type="submit">Abonner</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 James Bond 007 Museum</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

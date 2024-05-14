@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Fjern standardmarg */
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 10px; /* Justert padding for bedre proporsjon */
+    text-align: center;
+    position: relative; /* For posisjonering av navigasjonsmenyen */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Fjern standardmarg */
+    text-align: center; /* Sentrerer menyen */
+}
+
+nav ul li {
+    display: inline-block; /* Endret fra inline til inline-block for bedre kontroll */
+    margin: 0 15px; /* Justert mellomrom mellom menyelementene */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px; /* Legg til padding for en større klikkbar område */
+    transition: background-color 0.3s, color 0.3s; /* Myk overgang for hover-effekter */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #007BFF; /* Legger til en blå bakgrunnsfarge ved hover */
+    color: #ffffff;
+    border-radius: 5px; /* Avrundede hjørner */
+}
+
+#featured {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.exhibit img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px; /* Justert mellomrom mellom ikoner */
+}
+
+#social-media, #newsletter {
+    text-align: center;
+    padding: 20px 0;
+    margin: 20px 0;
+    background-color: #f4f4f4; /* Lett bakgrunnsfarge for å skille seksjonene */
+    border-radius: 8px; /* Avrundede hjørner for et mykere utseende */
+}
+
+#newsletter form {
+    display: inline-block; /* Sentrerer formen på siden */
+}
+
+#newsletter input[type="email"] {
+    padding: 8px;
+    margin-right: 10px; /* Gir litt plass mellom input og knapp */
+    border: 1px solid #ccc; /* Subtil ramme for å forbedre synlighet */
+    border-radius: 4px; /* Avrundede hjørner på inputfeltet */
+}
+
+#newsletter button {
+    padding: 8px 16px;
+    background-color: #007BFF; /* Matchende blå farge som brukt i navigasjonsmenyen */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Avrundede hjørner på knappen */
+    cursor: pointer; /* Endrer musepeker til en peker når over knappen */
+    transition: background-color 0.3s; /* Glatt overgang ved hover */
+}
+
+#newsletter button:hover {
+    background-color: #0056b3; /* Mørkere blåfarge ved hover for bedre brukerfeedback */
+}
+
+.exhibit input[type="date"] {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.exhibit {
+    margin-bottom: 20px; /* Legger til mellomrom mellom utstillingene */
+}
+#store-products {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.product {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 300px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
