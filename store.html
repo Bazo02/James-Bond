@@ -22,11 +22,18 @@
         <h2>Vår Butikk</h2>
         <div class="filter-controls">
             <label for="category">Kategori:</label>
-            <select id="category" onchange="filterProducts()">
+            <select id="category" onchange="filterProductsByCategory()">
                 <option value="all">Alle</option>
                 <option value="clothing">Klær</option>
                 <option value="collectibles">Samleobjekter</option>
                 <option value="accessories">Tilbehør</option>
+            </select>
+            <label for="price">Pris:</label>
+            <select id="price" onchange="filterProductsByPrice()">
+                <option value="all">Alle</option>
+                <option value="0-500">Under 500 kr</option>
+                <option value="500-1000">500-1000 kr</option>
+                <option value="1000+">Over 1000 kr</option>
             </select>
         </div>
 
@@ -48,7 +55,10 @@
             <img src="bilder/skyfall---omega-seamaster-aqua-terra-231_10_39_21_03_001-1694001912034.webp" alt="James Bond Klokke">
             <h3>James Bond Klokke</h3>
             <p>Elegant armbåndsur brukt i filmene.</p>
-            <p>2500 kr</p>
+            <p style="color: red;">Tilbud !</p>
+
+            <p style="color: red;">2500 kr</p>
+
             <button>Kjøp Nå</button>
         </div>
         <div class="product" data-category="accessories">
@@ -58,6 +68,9 @@
             <p>150 kr</p>
             <button>Kjøp Nå</button>
         </div>
+
+        <!-- Nedtellingsklokke -->
+        <div id="countdown" style="color: red;">Tilbud ender om: <span id="time"></span></div>
     </section>
 
     <footer>

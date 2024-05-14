@@ -139,17 +139,34 @@ footer {
 .product button:hover {
     background-color: #0056b3;
 }
-.filter-controls {
-    margin: 20px;
+#countdown {
+    font-size: 20px;
+    color: red;
+    margin: 20px 0;
+    font-weight: bold;
     text-align: center;
 }
 
+.filter-controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.filter-controls label {
+    margin-right: 10px;
+}
+
 .filter-controls select {
-    padding: 10px;
-    margin-left: 10px;
+    padding: 8px;
+    margin-left: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 button {
     padding: 10px 20px;
     background-color: #007BFF; /* Blå farge som matcher resten av designet */
