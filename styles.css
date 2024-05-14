@@ -139,3 +139,33 @@ footer {
 .product button:hover {
     background-color: #0056b3;
 }
+.filter-controls {
+    margin: 20px;
+    text-align: center;
+}
+
+.filter-controls select {
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Blå farge som matcher resten av designet */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    outline: none;
+}
+
+button:hover, button:focus {
+    background-color: #0056b3; /* Mørkere blåfarge ved hover for bedre brukerfeedback */
+    transform: scale(1.05); /* Lett zoom-effekt ved hover for en interaktiv følelse */
+}
+
+button:active {
+    transform: scale(0.95); /* Subtil trykk-effekt når knappen aktiveres */
+}
