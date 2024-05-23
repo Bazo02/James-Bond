@@ -1,6 +1,8 @@
 /* Generelle stiler */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -39,6 +41,11 @@ nav ul li a:hover, nav ul li a:focus {
     background-color: #007BFF;
     color: #ffffff;
     border-radius: 5px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px; /* Legg til avstand under overskrifter */
+    text-align: center; /* Sørg for at alle overskrifter er sentrert */
 }
 
 #featured, #store-products, #visit, #social-media, #newsletter {
@@ -117,18 +124,30 @@ nav ul li a:hover, nav ul li a:focus {
     margin: 0 10px;
 }
 
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newsletter h2 {
+    text-align: center;
+    width: 100%;
+}
+
 #newsletter form {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 10px;
+    margin-top: 10px;
 }
 
 #newsletter input[type="email"] {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 200px;
 }
 
 #newsletter button {
@@ -235,29 +254,20 @@ footer {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: none;
+    background-color: transparent; /* Sørg for at det ikke er noen bakgrunnsfarge */
     border: none;
-    font-size: 18px;
+    font-size: 10px; /* Mindre størrelse på pilen */
     cursor: pointer;
-    color: #007BFF;
-    padding: 0;
-    margin: 0;
-    transition: color 0.3s;
+    color: #888;
+    transition: opacity 0.3s, color 0.3s;
+    padding: 5px; /* Juster padding for å redusere knappens totale størrelse */
+    line-height: 1; /* Juster linjehøyden for å redusere knappens totale størrelse */
 }
 
 .hide-btn:hover,
 .hide-btn:focus {
-    color: #0056b3;
-}
-
-.hide-btn::after {
-    content: "▲";
-    display: inline-block;
-    transition: transform 0.3s;
-}
-
-.hide-btn.collapsed::after {
-    transform: rotate(180deg); /* Roter pilen ned */
+    opacity: 1;
+    color: #555;
 }
 
 .hidden {
